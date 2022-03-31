@@ -1,9 +1,13 @@
 #include<stdlib.h>
+
 #include<stdio.h>
+
 #include<string.h>
 
 void printMessageCenter(const char* message)
+
 {
+
     int len =0;
     int pos = 0;
     //calculate how many space need to print
@@ -23,24 +27,41 @@ void headMessage(const char *message)
 {
     system("cls");
     printf("\t\t\t###########################################################################");
+    
     printf("\n\t\t\t############                                                   ############");
+    
     printf("\n\t\t\t############                Voting Machine                     ############");
+    
     printf("\n\t\t\t############                                                   ############");
+    
     printf("\n\t\t\t###########################################################################");
+    
     printf("\n\t\t\t---------------------------------------------------------------------------\n");
+    
     printMessageCenter(message);
-    printf("\n\t\t\t----------------------------------------------------------------------------");
+    
+     printf("\n\t\t\t----------------------------------------------------------------------------");
+     
 }
 
 void welcomeMessage()
+
 {
+
     headMessage("Welcome to The Election");
+    
     printf("\n\n\n\n\n");
+    
     printf("\n\t\t\t  *------------------*\n");
+    
     printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    
     printf("\n\t\t\t        =                 WELCOME                   =");
+    
     printf("\n\t\t\t        =                   TO                      =");
+    
     printf("\n\t\t\t        =                ELECTRONIC                 =");
+    
     printf("\n\t\t\t        =                  VOTING                   =");
     printf("\n\t\t\t        =                 MACHINE                   =");
     printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
@@ -248,9 +269,9 @@ void main()
         {
             printf("\n");printf("\n");printf("\n");
 
-printf("Enter your choice \n1.  Results\n2.  Difference between the votes of any two candidates\n3.  
-Finish your voting\n4.  EXIT the Poll\n  ");
-            scanf("%d",&n);
+printf("Enter your choice \n1.  Results\n2.  Difference between the votes of any two candidates\n3.  Finish your voting\n4.  EXIT the Poll\n  ");
+
+scanf("%d",&n);
 
                 if(n==1)
                 {
@@ -340,9 +361,16 @@ Finish your voting\n4.  EXIT the Poll\n  ");
     printf("\nwrong password\n");
     main();
 }
-    }else{
-    printf("\nUser doesn't exist\n");
-    main();
+
+    }
+   
+   else
+    
+   {
+   
+   printf("\nUser doesn't exist\n");
+   
+   main();
 }
 
 }
